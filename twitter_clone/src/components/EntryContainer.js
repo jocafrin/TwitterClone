@@ -18,7 +18,12 @@ class EntryContainer extends Component {
       }
 
 
-
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.entries !== this.props.entries) {
+            localStorage.setItem("entries",
+            JSON.stringify(nextProps.todos));
+        }
+    }
 
 
 
