@@ -1,6 +1,6 @@
 export const NEW_ENTRY = 'NEW_ENTRY';
 export const GET_ENTRY = 'GET_ENTRY';
-export const TOGGLE_ENTRY = 'TOGGLE_ENTRY';
+
 
  export const newEntry = entry => {
     return {
@@ -16,9 +16,3 @@ export const TOGGLE_ENTRY = 'TOGGLE_ENTRY';
     }
 }
 
- export const toggleEntry = id => {
-    return {
-        type: TOGGLE_ENTRY,
-        payload: id
-    }
-}
