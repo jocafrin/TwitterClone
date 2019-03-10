@@ -41,8 +41,13 @@ class EntryContainer extends Component {
         });
     };
 
+    removeEntry = () => {
+        this.props.removeEntry();
+      };
+
+
     render() {
-        const { entries } = this.props;
+        // const { entries } = this.props;
         return (
             <div>
                 <form>
@@ -70,5 +75,5 @@ const mapStateToProps = state => {
 
 export default connect(mapStateToProps, {
     newEntry,
-    getEntry
+    getEntry,
 })(EntryContainer);

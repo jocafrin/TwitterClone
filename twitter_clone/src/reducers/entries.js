@@ -6,7 +6,7 @@ export default (entries = [], action) => {
       return [...entries, action.payload];
 
     case GET_ENTRY:
-      return action.paylod;
+      return action.payload;
     default:
       return entries;
   }

@@ -17,8 +17,8 @@ export const REMOVE_ENTRY = 'REMOVE_ENTRY';
     }
 }
 
-export const removeEntry = () => {
-    return {
-      type: REMOVE_ENTRY
-    };
-  };
+// export const removeEntry = () => {
+//     return {
+//       type: REMOVE_ENTRY
+//     };
+//   };
