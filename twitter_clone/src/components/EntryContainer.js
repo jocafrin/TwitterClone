@@ -29,21 +29,21 @@ class EntryContainer extends Component {
         this.setState({[event.target.name]: event.target.value });
     };
 
-    newEntryHandler = event => {
-        const { text } = this.state;
+    newEntryHandler = () => {
+        const text = this.state.text;
         const addEntry = {
             text,
-            id: this.props.entries ? this.props.entries.length + text : 0 + text
-        };
+            id: this.props.entries ? this.props.entries.length: 0
+        }
         this.props.newEntry(addEntry);
         this.setState({
             text: ""
         });
     };
 
-    removeEntry = () => {
-        this.props.removeEntry();
-      };
+    // removeEntry = () => {
+    //     this.props.removeEntry();
+    //   };
 
 
     render() {
