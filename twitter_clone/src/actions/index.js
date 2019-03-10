@@ -1,5 +1,6 @@
 export const NEW_ENTRY = 'NEW_ENTRY';
 export const GET_ENTRY = 'GET_ENTRY';
+export const REMOVE_ENTRY = 'REMOVE_ENTRY';
 
 
  export const newEntry = entry => {
@@ -16,3 +17,8 @@ export const GET_ENTRY = 'GET_ENTRY';
     }
 }
 
+export const removeEntry = () => {
+    return {
+      type: REMOVE_ENTRY
+    };
+  };
