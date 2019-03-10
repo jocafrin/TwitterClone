@@ -62,4 +62,13 @@ class EntryContainer extends Component {
     }
 }
 
-export default EntryContainer;
+const mapStateToProps = state => {
+    return {
+        entries: state.entries
+    };
+};
+
+export default connect(mapStateToProps, {
+    newEntry,
+    getEntry
+})(EntryContainer);
