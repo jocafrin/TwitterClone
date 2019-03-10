@@ -25,21 +25,41 @@ class EntryContainer extends Component {
         }
     }
 
+    handleEntry = event => {
+        this.setState({[event.target.name]: event.target.value });
+    };
 
-
-
-
-
-
-
-
-
-
-
+    newEntryHandler = event => {
+        const { text } = this.state;
+        const addEntry = {
+            text,
+            id: this.props.entries ? this.props.entries.length + text : 0 + text
+        };
+        this.props.newEntry(addEntry);
+        this.setState({
+            text: ""
+        });
+    };
 
     render() {
-        return (  );
+        const { entries } = this.props;
+        return (
+            <div>
+                <form>
+                    <input
+                     onChange={this.handleEntry}
+                     name="text"
+                     value={this.state.text}
+                     />
+                     <button onClick={this.newEntryHandler}>
+                        Flit!
+                     </button>
+                </form>
+            </div>
+
+
+          );
     }
 }
 
-export default ;
+export default EntryContainer;
