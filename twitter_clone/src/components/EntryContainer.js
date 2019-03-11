@@ -29,9 +29,11 @@ class EntryContainer extends Component {
         this.setState({[event.target.name]: event.target.value });
     };
 
-    newEntryHandler = () => {
+    newEntryHandler = (event) => {
+        event.preventDefault();
         const text = this.state.text;
         const addEntry = {
+            username: "jgriggs",
             text,
             id: this.props.entries ? this.props.entries.length: 0
         }
