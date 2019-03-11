@@ -6,7 +6,7 @@ React.js components, along with Redux
 Use React.js to build a mock social media feed similar to a twitter timeline.
 Utilize the following: 
 container
--[ ] stateful 
+- [ ] stateful 
 static components.
 
 Please make sure you use 
