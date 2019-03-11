@@ -7,9 +7,9 @@ Use React.js to build a mock social media feed similar to a twitter timeline.
 
 ### Requirements:
 - [x] utilize container
-- [ ] utilize stateful components
-- [ ] utilizestatic components
-- [ ] the interface should load with a single tweet
-- [ ] the application should provide a way to compose/write a new tweet and inject
+- [x] utilize stateful components
+- [x] utilizestatic components
+- [x] the interface should load with a single tweet
+- [x] the application should provide a way to compose/write a new tweet and inject
 it into the timeline.
 
