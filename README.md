@@ -6,7 +6,7 @@ React.js components, along with Redux
 Use React.js to build a mock social media feed similar to a twitter timeline.
 
 ### Requirements:
-- [ ] utilize container
+- [x] utilize container
 - [ ] utilize stateful components
 - [ ] utilizestatic components
 - [ ] the interface should load with a single tweet
