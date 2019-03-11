@@ -1,0 +1,20 @@
+.flitBox {
+    background-color: white;
+
+}
+
+span {
+    font-weight: bold;
+}
+
+.handle {
+    color:#697785;
+    font-weight: lighter;
+}
+.flitBox:hover {
+    background-color: #F6F8FA;
+}
+
+.profImg {
+    border-radius: 100%;
+}
