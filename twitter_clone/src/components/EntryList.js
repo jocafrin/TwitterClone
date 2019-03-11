@@ -1,26 +1,38 @@
 import React from "react";
-import './EntryList.css';
-import  profImg from './profile.jpg';
+import "./EntryList.css";
+import profImg from "./profile.jpg";
 
 const EntryList = props => {
   return (
-    <div className="flitList">
+    <ul className="flitList">
       {props.entries.map(flit => {
         return (
-          <div className="flitBox">
-            <span>{flit.username}</span>
-            <span className="handle"> @{flit.username}</span>
-
-            <div className="eachFlit">{flit.text}</div>
-            <img className="profImg" src={profImg} width="50" alt="banana cactus"/>
-          </div>
+          <li>
+            <div className="avatar">
+              <img src={profImg} alt="banana cactus" />
+              <div className="hover">
+                <div className="icon-twitter" />
+              </div>
+            </div>
+            <div className="bubble-container">
+              <div className="bubble">
+                <h3>@{flit.username}</h3>
+                <br />
+                {flit.text}
+                <div className="over-bubble">
+                  <div className="icon-mail-reply action" />
+                  <div className="icon-retweet action" />
+                  <div className="icon-star" />
+                </div>
+              </div>
+              <div className="arrow" />
+            </div>
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 };
 
 export default EntryList;
 
-
-// eachFlit should be inline block

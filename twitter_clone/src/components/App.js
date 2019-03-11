@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-        <header className="App-header">Flutter</header>
+        <header className="App-header"></header>
         <EntryContainer />
         <EntryList entries={this.props.entries} />
       </div>

@@ -1,0 +1,52 @@
+.newTweet {
+  width: 560px;
+  display: block;
+  margin: auto;
+  background-color: #3498db;
+  text-shadow: #2084c7 1px 1px 0;
+  padding: 1em 0 !important;
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 1.6em;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  position: relative;
+}
+
+.newTweet form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 75%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: darkgrey;
+}
+
+.newTweet form button {
+  align-self: center;
+  padding: 20px 100px 18px 100px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  background: #d49336;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  font-family: "Quicksand";
+  border: none;
+}
+.newTweet form button:hover {
+  background: goldenrod;
+}
+
+.newTweet form button:active {
+  transform: scale(1.025);
+}

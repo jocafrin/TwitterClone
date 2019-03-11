@@ -1,21 +1,27 @@
 import React from "react";
-import './Nav.css';
-import  profImg from './profile.jpg';
+import "./Nav.css";
 
 const Nav = () => {
   return (
-      <div className="Nav">
-      <ul class="twitter" role="navigation">
-    <li><i class="fa fa-home"></i>Home</li>
-    <li><i class="far fa-bell"></i>Notifications</li>
-    <li><i class="far fa-envelope"></i>Messages</li>
-    <li class="twitter__bird"><i class="fab fa-twitter"></i></li>
-    <li><form><input placeholder="Flip Through Flutter"/><i class="fa fa-search"></i></form></li>
-    <li><i class="far fa-user-circle"></i></li>
-    <li><button>Flit!</button></li>
-  </ul>
-      </div>
-
+    <div className="Nav">
+      <ul class="flutter" role="navigation">
+        <li class="flutter__bird">
+          <i class="fab fa-twitter" />
+        </li>
+        <li>
+          <i class="fa fa-home" />
+          Home
+        </li>
+        <li>
+          <i class="far fa-bell" />
+          Notifications
+        </li>
+        <li>
+          <i class="far fa-envelope" />
+          Messages
+        </li>
+      </ul>
+    </div>
   );
 };
 
